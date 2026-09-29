@@ -162,10 +162,18 @@ export const PostCard: React.FC<{ post: Post }> = ({ post }) => {
               </button>
 
               {/* Weekly Contest Winner Badge */}
-              {(post.authorBadge === 'WEEKLY_CONTEST_WINNER' || post.authorBadge === 'Contest Winner' || post.authorBadge === 'CONSISTENCY') && (
+              {(post.authorBadge === 'WEEKLY_CONTEST_WINNER' || post.authorBadge === 'Contest Winner') && (
                 <span className="inline-flex items-center gap-1 rounded-full bg-gradient-to-r from-amber-500/15 via-yellow-500/15 to-amber-500/15 border border-amber-500/40 px-2.5 py-0.5 text-[11px] font-bold text-amber-600 dark:text-amber-400 shadow-xs">
                   <Trophy className="h-3 w-3 text-amber-500" />
                   <span>Weekly Contest Winner</span>
+                </span>
+              )}
+
+              {/* Consistency Champion Badge */}
+              {(post.authorBadge === 'CONSISTENCY' || post.authorBadge === 'Consistency Champion') && (
+                <span className="inline-flex items-center gap-1 rounded-full bg-gradient-to-r from-orange-500/15 via-amber-500/15 to-rose-500/15 border border-orange-500/40 px-2.5 py-0.5 text-[11px] font-bold text-orange-600 dark:text-orange-400 shadow-xs">
+                  <Flame className="h-3 w-3 text-orange-500 fill-current" />
+                  <span>Consistency</span>
                 </span>
               )}
 
