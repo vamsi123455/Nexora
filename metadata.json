@@ -1,0 +1,6 @@
+{
+  "name": "NEXORA — Professional Platform",
+  "description": "Next-generation professional networking, developer community, project portfolio, and career platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
